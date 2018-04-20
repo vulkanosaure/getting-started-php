@@ -26,6 +26,7 @@ build:
         code: |-
           curl -L https://phar.phpunit.de/phpunit.phar -o /usr/local/bin/phpunit
           chmod +x /usr/local/bin/phpunit
+          echo "test $TEST_MY_VAR;"
     - script:
         name: install composer (thebuild)
         code: curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
