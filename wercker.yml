@@ -22,7 +22,7 @@ build:
     - install-packages:
         packages: git
     - script:
-        name: install phpunit (thebuild)
+        name: install phpunit (thebuild) TEST_MY_VAR => $TEST_MY_VAR
         code: |-
           curl -L https://phar.phpunit.de/phpunit.phar -o /usr/local/bin/phpunit
           chmod +x /usr/local/bin/phpunit
